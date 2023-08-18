@@ -1,0 +1,9 @@
+From: test@test.com
+Date: Sat, 08 Jul 2023 14:47:47 +0100
+Subject: Alert! New message.
+Message-Id: <MIKWWPTOEKU4.KCSA3BZXW8QH2@users-imac-2.local>
+To: admin@electrictrojan.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+You have a new message, read it now: <a href='http://localhost:5134/Home/About'>http://localhost:5134/Home/About</a>

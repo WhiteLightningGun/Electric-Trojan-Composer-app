@@ -1,0 +1,84 @@
+How to scaffold/reveal the identity stuff in a Razor Pages project:
+
+https://learn.microsoft.com/en-us/aspnet/core/security/authentication/scaffold-identity?view=aspnetcore-7.0&tabs=netcore-cli
+
+---
+
+dotnet ef migrations add MyBaseMigration --context [ContextClass] i.e. SurveyDB
+dotnet ef database update
+
+--
+
+User Role Manager Page [Administrators Only]
+
+Email       Current Role        Set Role[Drop List]         Post Button
+(done)
+--
+
+Different Layouts Depending on User Role 
+(done)
+
+--
+Create function for deleting a user and all data associated with them.
+
+Modify the file DeletePersonalData.cshtml.cs 
+
+(Done 28/05/23)
+
+--
+Front Page portfolio
+(done)
+
+--
+Create device for counting how much space a user has used.
+(done)
+
+--
+Create admin tool for unilaterally deleting user and all associated files.
+(done)
+--
+Create a decent User Summary Page that informs the user of the number of uploads, space used, etc.
+
+User name
+space used so far
+list of tracks
+(done)
+
+--
+Create a biography page.
+This is the last thing to do before deployment.
+--
+See if appsettings.json can be used to specify a limit on user upload space.
+(Update: it can.)
+--
+Fix Download button on ~/Roles/ManageUserFiles page
+--
+Add listen/preview button ? This is best with Ajax, by a long way. I don't know how to do that though.
+--
+Add audio player to front page... but where should the file source come from, and how do I make it easy to update?
+--
+Never trust the client - make sure that when a download or delete is called it is referencing a file that exists or else ban the user.
+--
+Add "This website uses cookies" privacy page.
+(done)
+--
+Add "this website uses cookies" pop-up.
+--
+
+Stored image code from About page: <img src="~/images/testBar.png" class="img-fluid align-top rounded p-2" alt="">
+
+Needs decent illustrative images in 2:1 aspect ratio though
+
+--------------------
+
+dotnet run --launch-profile https
+
+--
+On the use of multiple environments in ASP.NET Core:
+
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/environments?view=aspnetcore-7.0
+
+--
+
+To-do 8/7/23, continue moving everything to a single database, this includes UploadsDBEntries, Messages and Front FrontPageEntries
+
